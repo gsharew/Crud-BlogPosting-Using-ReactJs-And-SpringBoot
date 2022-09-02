@@ -1,0 +1,12 @@
+.FooterParent
+{
+     position: relative;
+     width: fit-content;
+     height: fit-content;
+}
+
+.footer
+{
+    text-align: center;
+    color: white;
+}

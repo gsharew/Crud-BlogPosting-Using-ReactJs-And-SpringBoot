@@ -1,0 +1,126 @@
+body
+{
+     width:100%;
+     height: 100vh;
+}
+
+.delete{
+      position: relative;
+}
+
+.delete .form_parent
+{
+     position: relative;
+     width:fit-content;
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     box-sizing: border-box;
+     margin-left: auto;
+     margin-right: auto;
+     padding:50px 25px;
+     left:0;
+     right:0;
+     bottom:0;
+     top:130px;
+     background-color: rgb(200, 102, 25);
+     border-radius:2px;
+     border: 1px solid silver;
+}
+
+.delete .form_parent form{    
+     width: 350px;
+     display: flex; 
+     padding-left: 30px;
+     padding-right: 30px;
+     padding-top: 30px;   
+     flex-direction: column;
+     align-items: flex-start;
+}
+
+.delete form .input[type='text']
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    width: 95%;
+}
+
+
+.delete form .input[type='number']
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    width: 95%;
+}
+
+.delete .form_parent form textarea
+{
+     width: 100%;
+     height: 100px; 
+     outline: none;
+}
+
+.delete .form_parent form input[type='submit']
+{
+     align-self: center;
+     padding: 10px;
+     padding-right: 20px;
+     padding-left: 20px;
+     font-weight: bold;
+     margin-top: 20px;
+     color: white;
+     opacity: .7;
+     border-radius: 5px;
+     background-color: rgb(200, 102, 25);
+     color: white;
+     outline: none;
+     border:  1px solid white;
+     cursor: pointer;
+}
+
+.delete .form_parent form span
+{
+     margin-top: 10px;
+     font-size: 18px;
+     font-weight: bold;
+}
+
+@media(max-width : 600px){
+     .delete .form_parent
+    {
+         width: 100%;
+         padding: 0px;
+         margin-left:0px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+    }
+    .delete .form_parent form
+    {
+         width:85%;
+         padding: 15px;
+    }
+
+    .delete .form_parent form input[type = 'text']
+    {
+         width: 95%;
+    }
+
+    .delete .form_parent form textarea
+    {
+         width: 100%;
+    }
+
+    .delete .form_parent form input[type='submit']
+    {
+         width: 50%;
+         border-radius: 5px;
+         background-color: rgb(200, 102, 25);
+         color: white;
+         outline: none;
+         border:  1px solid white;
+    }
+}

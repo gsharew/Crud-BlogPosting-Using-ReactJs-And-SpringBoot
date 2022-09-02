@@ -1,0 +1,100 @@
+.GrandParent
+{
+      position: relative;
+      width:fit-content;
+      height: fit-content;
+}
+
+.GrandParent .HeaderParent{
+     position: fixed;
+     width: 100%;
+     z-index:10;
+     height: fit-content;
+     padding: 40px;
+     background-color: rgba(54, 7, 7, 0.5);
+     color: white;
+     margin-bottom: 20px;
+}
+
+.HeaderParent span{
+     float: left;
+     font-size: 20px;
+}
+
+.toggler
+{
+     right:0;
+     display: none;
+     float: right;
+     cursor: pointer;
+     font-size: 20px;
+}
+
+.HeaderParent .logoName
+{
+     font-size: 22px;
+     font-weight: bold;
+}
+
+@media(max-width:900px)
+{
+     .HeaderParent .LargeScreenList
+     {
+         display: none;
+     }
+
+     .toggler{
+        display: block;
+        position:fixed;
+        right: 20px;
+     }
+
+}
+
+.HeaderParent .toggledSmallScreenList
+{
+     display: block !important;
+     list-style-type:none;
+     margin-left: -50px;
+     margin-top:10px;
+}
+
+.HeaderParent .toggledSmallScreenList li
+{
+     padding: 10px;
+}
+
+.HeaderParent li 
+{
+      color: white;
+}
+
+.HeaderParent .toggledSmallScreenList li:last-child
+{
+     padding-bottom:0px;
+}
+
+.HeaderParent .LargeScreenList
+{
+     list-style-type:none;
+     float: right;
+     margin-right: 40px;
+}
+
+.HeaderParent .LargeScreenList li{
+     display: inline;
+     padding: 20px;
+     cursor: pointer;
+}
+
+.HeaderParent .LargeScreenList li:hover
+{
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.HeaderParent .SmallScreenList 
+{
+     list-style-type: none;
+     display: none;
+}
